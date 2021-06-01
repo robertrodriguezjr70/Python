@@ -1,3 +1,6 @@
+#Help
+dir(var_name) <-- works like Get-Member
+
 # Vars
   # a,b,c = 1,2,3
   
