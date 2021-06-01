@@ -1,2 +1,9 @@
 # Vars
   # a,b,c = 1,2,3
+  
+#print
+ print (f'This is a {test}')
+ 
+#slicing
+ name='Robert'
+ first_initial = name[0]
