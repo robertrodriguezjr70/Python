@@ -10,3 +10,10 @@ dir(var_name) <-- works like Get-Member
 #slicing
  name='Robert'
  first_initial = name[0]
+ 
+# List
+  # cart = ["radio","coffee","tools","chips","soda"]
+  # new_cart = cart[:] <-- notice the ":", you must have this when copying a list.
+  # new_cart[0] = 'TV'
+  # print(cart)
+  # print(new_cart)
