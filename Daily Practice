@@ -17,3 +17,8 @@ dir(var_name) <-- works like Get-Member
   # new_cart[0] = 'TV'
   # print(cart)
   # print(new_cart)
+
+  # cart.insert(0,"USB Cable")
+  # cart.pop()                 <-- removes the last item in the list
+  # cart.pop(0)                <-- removes the first item in the list
+  $ cart.remove("USB Cable")
