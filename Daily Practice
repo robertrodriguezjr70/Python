@@ -4,32 +4,18 @@ dir(var_name) <-- works like Get-Member
 # Vars
   # a,b,c = 1,2,3
   
-#print
- print (f'This is a {test}')
- 
-#slicing
- name='Robert'
- first_initial = name[0]
- 
+#Printing  
+  # print(value,end='\n')  
+
 # List
-  # cart = ["radio","coffee","tools","chips","soda"]
-  # new_cart = cart[:] <-- notice the ":", you must have this when copying a list.
-  # new_cart[0] = 'TV'
-  # print(cart)
-  # print(new_cart)
- 
-# Dictionary
-  dict = {
-  'a':1,
-  'b':2,
-  'c':2
+  #cart_list = ['chips','soda','beer','ice']
+    # cart_list.insert(0,"USB Cable")
+    # cart_list.append("USB Cable")
+    # cart_list.pop()                 <-- removes the last item in the list
+    # cart_list.pop(0)                <-- removes the first item in the list
+    # cart_list.remove("USB Cable")
+    # cart_list.count('beer') <-- counts how many times var shows
     
-
-  
-  }
-
-
-  # cart.insert(0,"USB Cable")
-  # cart.pop()                 <-- removes the last item in the list
-  # cart.pop(0)                <-- removes the first item in the list
-  $ cart.remove("USB Cable")
+# if statment
+  # if value in var:
+  # if value not in var:
