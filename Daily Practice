@@ -25,3 +25,21 @@ dir(var_name) <-- works like Get-Member
   # fam("Robert", "Rodriguez")
   # fam(fname='Robert',lname='Rodriguez')
   
+  def myfunc():
+    picture = [
+   [0,0,0,1,0,0,0],
+   [0,0,1,1,1,0,0],
+   [0,1,1,1,1,1,0],
+   [1,1,1,1,1,1,1],
+   [0,0,0,1,0,0,0],
+   [0,0,0,1,0,0,0]
+]
+
+    for a in picture:
+        print('',end='\n')
+        for b in a:
+            if b == 0:
+               print(" ",end='')
+            else:
+               print("*",end='')
+  
