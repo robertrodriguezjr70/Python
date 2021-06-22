@@ -21,9 +21,10 @@ dir(var_name) <-- works like Get-Member
   # if value not in var:
   
 #Functios
-  # fam(fname,lname)
-  # fam("Robert", "Rodriguez")
-  # fam(fname='Robert',lname='Rodriguez')
+  # def fam(fname,lname):
+  # def fam("Robert", "Rodriguez"):
+  # def fam(fname='Robert',lname='Rodriguez'):
+  # def fam(*args):  <-- allows you to pas multiple arguments or keyword arguments to a function
   
   def myfunc():
     picture = [
