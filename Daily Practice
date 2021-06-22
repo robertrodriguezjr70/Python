@@ -16,6 +16,18 @@ dir(var_name) <-- works like Get-Member
     # cart_list.remove("USB Cable")
     # cart_list.count('beer') <-- counts how many times var shows
     
+# dict
+    # fam_dict = {
+        'oldes':'Robert',
+        'middle':'Dave',
+        'young':'Dan'
+      }
+    # print(fam_dict.get('oldest'))  <-- access value
+    # def my_function(*args, **kwargs): 
+          for i in kwargs.values():  <--get values in while looping
+           print(i)
+    
+    
 # if statment
   # if value in var:
   # if value not in var:
@@ -25,6 +37,8 @@ dir(var_name) <-- works like Get-Member
   # def fam("Robert", "Rodriguez"):
   # def fam(fname='Robert',lname='Rodriguez'):
   # def fam(*args):  <-- allows you to pas multiple arguments or keyword arguments to a function
+  # def fam(params,*args,default parameters, **kwargs) <-- order for passing into a function
+      # def fam(name, *args, i='H', **kwargs)   
   
   def myfunc():
     picture = [
