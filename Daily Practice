@@ -1,11 +1,18 @@
 #Help
-dir(var_name) <-- works like Get-Member
+dir(var_name) <-- works like Get-Memberh
+help(dict) or help(list)
 
 # Vars
   # a,b,c = 1,2,3
   
 #Printing  
   # print(value,end='\n')  
+  
+# Four built in data types to store collections of data
+  # tuple
+  # list
+  # dict
+  # set
 
 # List
   #cart_list = ['chips','soda','beer','ice']
@@ -26,6 +33,13 @@ dir(var_name) <-- works like Get-Member
     # def my_function(*args, **kwargs): 
           for i in kwargs.values():  <--get values in while looping
            print(i)
+# Tuple
+  
+    code examples here
+
+# Set
+    
+    code examples here
     
     
 # if statment
