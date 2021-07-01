@@ -47,6 +47,23 @@ help(dict) or help(list)
   # if value not in var:
   
 #Functios
+
+
+ # def change_value(var):
+ #   return var + 1
+
+# my_list =  [1,2,3,4,5]
+# mp = map(change_value, my_list)  <-- cal map function with function name and list
+# print(list(mp))                  <-- convert map to list
+
+ 
+
+
+# filter
+ # zip
+ # reduce
+ 
+
   # def fam(fname,lname):
   # def fam("Robert", "Rodriguez"):
   # def fam(fname='Robert',lname='Rodriguez'):
