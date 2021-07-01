@@ -48,18 +48,42 @@ help(dict) or help(list)
   
 #Functios
 
+#******************* The map function runs each value of the list through the function. 
+ #  my_list =  ["Robert","Dave","Dan","Mom","Dad","Dad"]+ 1
+ #  def change_value(var):
+ #      return var
+ #
+ #  mp = map(change_value, my_list)
+ #  new_list = list(mp)
+ #  print(new_list[0])
 
- # def change_value(var):
- #   return var + 1
+#******************** The filter function runs each value of the list through function and returns TRUE and the value
+ages = [5, 12, 17, 18, 24, 32]
 
-# my_list =  [1,2,3,4,5]
-# mp = map(change_value, my_list)  <-- cal map function with function name and list
-# print(list(mp))                  <-- convert map to list
+def myFunc(x):
+  if x < 18:
+    return False
+  else:
+    return True
 
- 
+adults = filter(myFunc, ages)
+
+for x in adults:
+  print(x)
+#******************** The Zip Function zips two "list" together and makes a tuple
+a = ("John", "Charles", "Mike")
+b = ("Jenny", "Christy", "Monica")
+
+x = zip(a, b)
+
+#use the tuple() function to display a readable version of the result:
+
+print(tuple(x))
+
+#******************** The Reduce Function 
 
 
-# filter
+
  # zip
  # reduce
  
