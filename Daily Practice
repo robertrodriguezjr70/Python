@@ -2,6 +2,9 @@
 dir(var_name) <-- works like Get-Memberh
 help(dict) or help(list)
 
+# Imports
+  # import functools
+ 
 # Vars
   # a,b,c = 1,2,3
   
@@ -81,7 +84,12 @@ x = zip(a, b)
 print(tuple(x))
 
 #******************** The Reduce Function 
+def accumulator(acc, item):
+    print(acc, item)
+    return acc + item
 
+print(functools.reduce(accumulator, my_list,0)) <-- accumulater is like a counter, and here we set it to 0
+print(my_list)
 
 
  # zip
