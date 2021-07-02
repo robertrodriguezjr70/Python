@@ -4,12 +4,14 @@ help(dict) or help(list)
 
 # Imports
   # import functools
+  # from shopping.scart import shopping_cart, shopping_cart2 <-- import multiple modules
  
 # Vars
   # a,b,c = 1,2,3
   
 #Printing  
   # print(value,end='\n')  
+  # print(f'Hellow, my name is {var})
   
 # Four built in data types to store collections of data
   # tuple
@@ -25,6 +27,7 @@ help(dict) or help(list)
     # cart_list.pop(0)                <-- removes the first item in the list
     # cart_list.remove("USB Cable")
     # cart_list.count('beer') <-- counts how many times var shows
+    # max_val = max(var/list/tuple) <-- get the largest value
     
 # dict
     # fam_dict = {
@@ -48,8 +51,24 @@ help(dict) or help(list)
 # if statment
   # if value in var:
   # if value not in var:
+  # if "Robert" in my_list:
+  # if "Robert" not in my_list:
   
-#Functios
+# for statement
+  # for i in my_list:
+  # for num in range(20):
+ 
+# while statment
+
+  # while true:
+     try:
+        code here
+     except:
+        code here
+     else:
+           break
+  
+#Functions
 
 #******************* The map function runs each value of the list through the function. 
  #  my_list =  ["Robert","Dave","Dan","Mom","Dad","Dad"]+ 1
