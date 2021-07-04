@@ -5,6 +5,11 @@ help(dict) or help(list)
 # Imports
   # import functools
   # from shopping.scart import shopping_cart, shopping_cart2 <-- import multiple modules
+  # pdb 
+  
+# Debug
+  # import pdb
+  # pdb.set_trace()
  
 # Vars
   # a,b,c = 1,2,3
