@@ -11,6 +11,7 @@ help(dict) or help(list)
   # f = open('E:\Study\Python\hello.txt')
   # print(f.name)
   # print(f.read())
+  # f.close()
   
   
 # Debug
