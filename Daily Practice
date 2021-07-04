@@ -7,11 +7,12 @@ help(dict) or help(list)
   # from shopping.scart import shopping_cart, shopping_cart2 <-- import multiple modules
   # pdb
   
-# File i/o
+# File i/o    
   # f = open('E:\Study\Python\hello.txt')
-  # print(f.name)
-  # print(f.read())
-  # f.close()
+  #  ln = f.split("\n")  <-- split on the new line
+  # print(ln.name)
+  # print(ln.read())
+  # ln.close()
   
   
 # Debug
