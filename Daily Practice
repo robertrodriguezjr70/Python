@@ -7,43 +7,10 @@ help(dict) or help(list)
   # from shopping.scart import shopping_cart, shopping_cart2 <-- import multiple modules
   # pdb
   
-# File i/o    
 
-  # file_path = 'E:\Study\Python\hello.txt'
-  # with open(file_path,mode='r+) as file_in:     <-- file open for read and write 
-  # with open(file_path,mode='a') as file_in:     <-- file open for append to file
-        val = file_in.readlines()                 <-- read all lines and make a list
-        print(type(val))
-
-
-
-  # file_in = open('E:\Study\Python\hello.txt', "r")   
-  # content = file_in.read()
-  # file_read = content.split(",")      < -- convert to a list with each line split up
-  # print(file_read)
-  # file_in.close()
-  
-  # file_in = open('E:\Study\Python\hello.txt', "r")   
-  # content = file_in.readlines()       <-- read all lines and make a list
-  # print(file_read)
-  # file_in.close()
   
   
   
-  # file_in = open('E:\Study\Python\hello.txt', "r")
-  print(file_in.readline())
-  my_file.seek(0)         <--move cursor to beginning of line
-  print(file_in.read())
-  my_file.seek(0)         <--move cursor to beginning of line
-  
-  
-  
-  
-  # file_in = open('E:\Study\Python\hello.txt', "r")
-  print(file_in.read())
-  my_file.seek(0)         <--move cursor to beginning of line
-  print(file_in.read())
-  my_file.seek(0)         <--move cursor to beginning of line
   
 # Debug
   # import pdb 
