@@ -15,6 +15,12 @@ help(dict) or help(list)
   # file_in.close()
   
   
+  # file_in = open('E:\Study\Python\hello.txt', "r")
+  print(file_in.read())
+  my_file.seek(0)         <--move cursor to beginning of line
+  print(file_in.read())
+  my_file.seek(0)         <--move cursor to beginning of line
+  
 # Debug
   # import pdb 
   # pdb.set_trace()
