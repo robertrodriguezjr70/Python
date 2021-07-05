@@ -10,8 +10,8 @@ help(dict) or help(list)
 # File i/o    
 
   # file_path = 'E:\Study\Python\hello.txt'
-  # with open(file_path) as file_in:
-        val = file_in.readlines()       <-- read all lines and make a list
+  # with open(file_path,mode='r+) as file_in:     <-- file open for read and write
+        val = file_in.readlines()                 <-- read all lines and make a list
         print(type(val))
 
 
