@@ -1,0 +1,65 @@
+# File i/o    
+ 
+  # Imports
+  
+    # import os.path
+ 
+ 
+  # file actions 
+    # mode='r'
+    # mode='w'
+    # mode='a'
+    
+   #*************************************** read **************************************** 
+  
+  # file_path = 'E:\Study\Python\hello.txt'
+  # with open(file_path,mode='r+) as file_in:     <-- file open for read and write 
+  # with open(file_path,mode='a') as file_in:     <-- file open for append to file
+        val = file_in.readlines()                 <-- read all lines and make a list
+        print(type(val))
+
+
+
+  # file_in = open('E:\Study\Python\hello.txt', "r")   
+  # content = file_in.read()
+  # file_read = content.split(",")      < -- convert to a list with each line split up
+  # print(file_read)
+  # file_in.close()
+  
+  # file_in = open('E:\Study\Python\hello.txt', "r")   
+  # content = file_in.readlines()       <-- read all lines and make a list
+  # print(file_read)
+  # file_in.close()
+  
+  
+  
+  # file_in = open('E:\Study\Python\hello.txt', "r")
+  print(file_in.readline())
+  my_file.seek(0)         <--move cursor to beginning of line
+  print(file_in.read())
+  my_file.seek(0)         <--move cursor to beginning of line
+  
+  
+  
+  
+  # file_in = open('E:\Study\Python\hello.txt', "r")
+  print(file_in.read())
+  my_file.seek(0)         <--move cursor to beginning of line
+  print(file_in.read())
+  my_file.seek(0)         <--move cursor to beginning of line
+  
+  #*************************************** write ****************************************
+  
+  file_path = 'E:\Study\Python\hello.txt'
+  
+  
+# see if file exist, create if needed and write to it
+if os.path.isfile(file_path):
+    print("File exists")
+    with open(file_path, mode='a') as file_in:
+        file_in.write("\nadded another row to the file")
+
+else:
+    print("Created file!")
+    with open(file_path, mode='w') as file_in:
+        file_in.write("Created file and added its first entry")
