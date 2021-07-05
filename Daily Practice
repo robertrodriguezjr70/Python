@@ -54,7 +54,7 @@ help(dict) or help(list)
            print(i)
 # Tuple
   
-    code examples here
+    fam_tup = ('Robert','David',"Dan','Mom','Dad')
 
 # Set
     
