@@ -8,11 +8,11 @@ help(dict) or help(list)
   # pdb
   
 # File i/o    
-  # f = open('E:\Study\Python\hello.txt')
-  #  ln = f.split("\n")  <-- split on the new line
-  # print(ln.name)
-  # print(ln.read())
-  # ln.close()
+  # file_in = open('E:\Study\Python\hello.txt', "r")
+  # content = file_in.read()
+  # file_read = content.split(",")
+  # print(file_read)
+  # file_in.close()
   
   
 # Debug
