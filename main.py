@@ -3,6 +3,9 @@
 import utility
 from shopping.scart import shopping_cart,shopping_cart2
 
+# file i/o
+    import os.path 
+
 
 #test for main
 if __name__ == "__main__":
