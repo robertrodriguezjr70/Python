@@ -8,6 +8,14 @@ help(dict) or help(list)
   # pdb
   
 # File i/o    
+
+  # file_path = 'E:\Study\Python\hello.txt'
+  # with open(file_path) as file_in:
+        val = file_in.readlines()       <-- read all lines and make a list
+        print(type(val))
+
+
+
   # file_in = open('E:\Study\Python\hello.txt', "r")   
   # content = file_in.read()
   # file_read = content.split(",")      < -- convert to a list with each line split up
