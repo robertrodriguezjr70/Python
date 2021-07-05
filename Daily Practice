@@ -8,11 +8,26 @@ help(dict) or help(list)
   # pdb
   
 # File i/o    
-  # file_in = open('E:\Study\Python\hello.txt', "r")
+  # file_in = open('E:\Study\Python\hello.txt', "r")   
   # content = file_in.read()
-  # file_read = content.split(",")
+  # file_read = content.split(",")      < -- convert to a list with each line split up
   # print(file_read)
   # file_in.close()
+  
+  # file_in = open('E:\Study\Python\hello.txt', "r")   
+  # content = file_in.readlines()       <-- read all lines and make a list
+  # print(file_read)
+  # file_in.close()
+  
+  
+  
+  # file_in = open('E:\Study\Python\hello.txt', "r")
+  print(file_in.readline())
+  my_file.seek(0)         <--move cursor to beginning of line
+  print(file_in.read())
+  my_file.seek(0)         <--move cursor to beginning of line
+  
+  
   
   
   # file_in = open('E:\Study\Python\hello.txt', "r")
