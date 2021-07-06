@@ -14,7 +14,7 @@
    
    # test to see if file exist
    try:
-    with open(file_path, mode=r) as my_file:
+    with open(file_path, mode='r') as my_file:
         print("File exist")
    except  FileNotFoundError as err:
         print('File does not exist')
