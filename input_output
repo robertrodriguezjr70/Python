@@ -11,6 +11,16 @@
     # mode='a'
     
    #*************************************** read **************************************** 
+   
+   # test to see if file exist
+   try:
+    with open(file_path, mode=r) as my_file:
+        print("File exist")
+   except  FileNotFoundError as err:
+        print('File does not exist')
+        raise err
+   
+   
   
   # file_path = 'E:\Study\Python\hello.txt'
   # with open(file_path,mode='r+) as file_in:     <-- file open for read and write 
