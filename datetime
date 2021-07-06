@@ -1,0 +1,18 @@
+import datetime as dt
+
+current_date = dt.date.today()
+current_date = dt.date(yyyy,mm,dd)
+
+date1 = dt.date.today()
+
+print("The year is ", date1.year)
+print("The Month is ", date1.month)
+print("The day is ", date1.day)
+
+time1 = dt.time
+
+print("Hour:",time1.hour)
+print("Minute:", time1.minute)
+print("Second", time.second)
+
+current_time = dt.datetime.now
