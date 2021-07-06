@@ -20,3 +20,4 @@ current_time = dt.datetime.now
 
 string_date = current_datetime.strftime("%A,%B,%D,%Y") < -- prints in the format of Tuesday,July,07/06/21,21
 print(string_date)
+dd
