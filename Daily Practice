@@ -4,9 +4,10 @@ help(dict) or help(list)
 
 # Imports
   # import functools
-  # import re
+  # import re    <-- regular expressions
   # from shopping.scart import shopping_cart, shopping_cart2 <-- import multiple modules
-  # pdb
+  # import pdb   <-- debugger
+  
   
 
   
@@ -150,4 +151,28 @@ print(my_list)
                print(" ",end='')
             else:
                print("*",end='')
+             
+   #******************** The Regular Expressions
+   
+   # import re
+   
+   #https://regex101.com 
+   
+   
+   string = 'search inside of this test please!'
+   result = re.search('this',string)  <-- gets the start position and end position
+   result = re.start()
+   result = re.end()
+   result = re.group()
+   result = re.findall(string)
+   result2 = result.span()            <-- puts results into a tuple
+   
+   pattern = re.compile('this')
+   result = pattern.search(string)
+   result = pattern.findall(string)
+   
+   
+   
+   
+   
   
