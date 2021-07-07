@@ -4,6 +4,7 @@ help(dict) or help(list)
 
 # Imports
   # import functools
+  # import re
   # from shopping.scart import shopping_cart, shopping_cart2 <-- import multiple modules
   # pdb
   
