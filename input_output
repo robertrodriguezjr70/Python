@@ -10,9 +10,19 @@
     # mode='w'
     # mode='a'
     
-   #*************************************** read **************************************** 
+    
+#*************************************** pdf File read ****************************************     
+    # import PyPDF2
+
+    # file_path = 'E:\Study\Python\dummy.pdf'
+
+    # with open(file_path,mode='rb') as file_in:      <-- read binary mode
+    #     file_lines = PyPDF2.PdfFileReader(file_in)
+    
+    
+   #*************************************** Text File read **************************************** 
    
-   # test to see if file exist
+   # test to see if text file exist
    try:
     with open(file_path, mode='r') as my_file:
         print("File exist")
