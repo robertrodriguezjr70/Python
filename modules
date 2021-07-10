@@ -1,0 +1,2 @@
+Moduel name: time
+Example: print(time.sleep(10))
