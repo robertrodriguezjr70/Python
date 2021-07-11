@@ -1,2 +1,9 @@
-Moduel name: time
-Example: print(time.sleep(10))
+
+import pyautogui
+import time
+import sys
+
+# exampe
+  # Moduel name: time
+  # Example: print(time.sleep(10))
+
