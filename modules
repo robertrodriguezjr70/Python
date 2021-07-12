@@ -1,7 +1,8 @@
 
-import pyautogui
-import time
-import sys
+# import pyautogui
+# import time
+# import sys
+# smtplib
 
 # exampe
   # Moduel name: time
