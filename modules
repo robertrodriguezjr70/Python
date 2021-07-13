@@ -6,6 +6,8 @@
 # import string
 # import path
 # import hashlib
+# import requests
+# import beautiful soup4
 
 
 
