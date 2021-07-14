@@ -1,0 +1,5 @@
+import subprocess
+
+subprocess.call(["clear"])
+subprocess.call(["ls", "-l"])
+subprocess.call(["cat", "file.txt"])
