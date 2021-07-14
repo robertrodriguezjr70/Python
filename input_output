@@ -76,16 +76,20 @@ my_file.close()
   
   #*************************************** write ****************************************
   
-  file_path = 'E:\Study\Python\hello.txt'
-  
-  
-# see if file exist, create if needed and write to it
-if os.path.isfile(file_path):
-    print("File exists")
-    with open(file_path, mode='a') as file_in:
-        file_in.write("\nadded another row to the file")
+#The below is WORKING code that will read and write to a file  
+ file_path = "e:\study\Python\hello.txt"
 
-else:
-    print("Created file!")
-    with open(file_path, mode='w') as file_in:
-        file_in.write("Created file and added its first entry")
+ try:
+     with open(file_path, mode='r') as my_file:
+         val = my_file.readlines()
+         print("File exist")
+ except   FileExistsError as err:
+             print('File does not exist:', err)
+
+
+ with open(file_path, mode='a') as my_file:
+     my_file.write(f"she cannot have bread  as of {d1} ever again\n")
+
+
+ my_file.close()
+
