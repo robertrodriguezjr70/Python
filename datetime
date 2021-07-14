@@ -1,4 +1,8 @@
-import datetime as dt
+from datetime import datetime
+from datetime import date
+
+d1 = date.today().strftime("%m/%d/%y")   <-- mm/dd/yyyy format
+
 
 current_date = dt.date.today()
 current_date = dt.date(yyyy,mm,dd)
