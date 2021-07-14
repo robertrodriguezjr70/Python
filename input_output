@@ -22,13 +22,22 @@
     
    #*************************************** Text File read **************************************** 
    
-   # test to see if text file exist
-   try:
+  
+ try:
     with open(file_path, mode='r') as my_file:
+        val = my_file.readlines()
         print("File exist")
-   except  FileNotFoundError as err:
-        print('File does not exist')
-        raise err
+except   FileExistsError as err:
+            print('File does not exist:', err)
+
+
+with open(file_path, mode='a') as my_file:
+    my_file.write(f"she cannot have bread  as of {d1} ever again \n")
+
+
+my_file.close()
+  
+  
    
    
   
@@ -42,14 +51,11 @@
 
   # file_in = open('E:\Study\Python\hello.txt', "r")   
   # content = file_in.read()
+  
   # file_read = content.split(",")      < -- convert to a list with each line split up
-  # print(file_read)
-  # file_in.close()
   
   # file_in = open('E:\Study\Python\hello.txt', "r")   
   # content = file_in.readlines()       <-- read all lines and make a list
-  # print(file_read)
-  # file_in.close()
   
   
   
