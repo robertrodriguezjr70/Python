@@ -1,20 +1,43 @@
 Website scrapted: http://web.mta.info/developers/turnstile.html
 
+from bs4 import BeautifulSoup
+import urllib.request
+import time
 
-response = requests.get(url)
+# define vars here
+url ='http://web.mta.info/developers/turnstile.html'
+html_list = []                 # we'll be adding each html line to this list as its read
+html_search = 'turnstile_'     # what we will be searching on
 
-soup = BeautifulSoup(response.text, 'html.parser')
-a_tags = soup.findAll('a')  # find all the <a tags
+def scrape_data():
+
+    try:
+        response = requests.get(url) #can we connect to web page?
+    except Exception as err:
+        print("We cannot reach the web page. Please try again later")
+
+   # connection good, now parse, search, and return results
+    soup = BeautifulSoup(response.text, 'html.parser')
+    a_tags = soup.findAll('a')  # find all the <a tags
+  
+    return a_tags
 
 
-for tag in a_tags:
-    #time.sleep(1)  # sleep so were not tagged for spamming
-    html_list.append(tag)  # add line read to list
+def search_and_print(a_tags):
+
+     for tag in a_tags:
+        #time.sleep(1)  # sleep so were not tagged for spamming
+         html_list.append(tag)  # add each html line to our list
+
+     # each html line is in our list. Now go through each
+     # line and look for our matches, and print them.
+
+     for html in html_list:
+
+          if html_search in str(html): # do we have a match?
+              print(html)
 
 
-for html in html_list:
 
-    # check to see if value matches our search
-    if html_search in str(html):
-         print(html)
-
+scrape = scrape_data()   # scrape it
+search_and_print(scrape) # search through list and print our results
