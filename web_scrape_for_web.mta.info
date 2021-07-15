@@ -1,2 +1,20 @@
 Website scrapted: http://web.mta.info/developers/turnstile.html
 
+
+response = requests.get(url)
+
+soup = BeautifulSoup(response.text, 'html.parser')
+a_tags = soup.findAll('a')  # find all the <a tags
+
+
+for tag in a_tags:
+    #time.sleep(1)  # sleep so were not tagged for spamming
+    html_list.append(tag)  # add line read to list
+
+
+for html in html_list:
+
+    # check to see if value matches our search
+    if html_search in str(html):
+         print(html)
+
