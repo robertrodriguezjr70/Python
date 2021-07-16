@@ -1,0 +1,35 @@
+def pass_args(*args):
+    len(args)
+    print(f"You gave us {len(args)} arguments")
+    print(args)
+    print(type(args))
+
+
+def pass_kwargs(**kwargs):
+    #len(kwargs)
+    #print(f"You gave us {len(kwargs)} arguments")
+    #print(kwargs)
+    #print(type(kwargs))
+
+    print("\nUsing key & value")
+    for key, value in kwargs.items():  # you will have access to key and value
+        print(f"{key} is {value}")
+
+    print("\nUsing values")
+    for value in kwargs.values():     # you will have access to the values only
+        print(value)
+
+    print("\nUsing key & keys")
+    for value in kwargs.keys():     #   you will have access to the keys only
+        print(value)
+
+fam_tup = ("Robert","Dave","Dan","Mom","Dad")
+#pass_args(fam_tup)                             # pass in a tuple to args
+
+var1 = "Robert"
+var2 = "Dav"
+var3 = "Dan"
+pass_args(var1,var2,var3)                      # pass in vars to args
+
+# pass key/val to kwargs
+pass_kwargs(Firstname="Robert", Lastname="Rodriguez", Age="51", Phone="3460320443")
