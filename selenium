@@ -4,41 +4,34 @@ http://allselenium.info/python-selenium-commands-cheat-sheet-frequently-used/
 https://python.hotexamples.com/examples/selenium.webdriver.support.ui/Select/select_by_value/python-select-select_by_value-method-examples.html
 
 # Python import
-  # from selenium import webdriver
-  
-# ** sample code that will load the browser, input a value, click the button, and get the output
-  
   from selenium import webdriver
-from bs4 import BeautifulSoup
+  from selenium import webdriver
+  from bs4 import BeautifulSoup
 
 chrome_browser = webdriver.Chrome('./chromedriver')
-
-chrome_browser.get('https://www.seleniumeasy.com/test/basic-first-form-demo.html')
+url = 'https://www.seleniumeasy.com/test/basic-first-form-demo.html'
+chrome_browser.get(url)
 chrome_browser.maximize_window()
 
+value1 = 5
+value2 = 4
+
+# find the first check box
+sum1 = chrome_browser.find_element_by_id('sum1')
+sum1.send_keys(value1)
+
+# find the second check box
+sum2 = chrome_browser.find_element_by_id('sum2')
+sum2.send_keys(value2)
 
 
-message_output = "Bug"
-# find the text box and input message as page is loading
-user_message = chrome_browser.find_element_by_id('user-message')
-user_message.clear()
-user_message.send_keys(message_output) #display message when page loads
+# find the button and click it
+get_total_button = chrome_browser.find_element_by_xpath(   # <-- searching for a button with get total
+            "//button[contains(text(),'Get Total')]")
+            
+get_total_button.click()
 
-# find the button
-user_button = chrome_browser.find_element_by_class_name('btn-default')
-#var = user_button.get_attribute('innerHTML')      # Get the HTML line that matched
-#print(var)
-
-# click button
-user_button.click()
-
-# display message
-get_display_message = chrome_browser.find_element_by_id('display')
-var = get_display_message.get_attribute('innerHTML')      # Get the HTML line that matched
-print(var)
-
-#                  webdriver got source, and parsed through beautiful soup
-#html = chrome_browser.page_source            # Get ALL the page source
-#bs = BeautifulSoup(html, 'html.parser')      # parce it
-
-print("end of script")
+val = get_total_button.get_attribute('innerHTML')           #this is the line of html fetched
+print(val)
+  
+# print("end of script")
